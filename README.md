@@ -11,6 +11,7 @@ Joey G
  Dependencies
  Setup
  Features
+ Repo Organization
  Assets Organization
  Prefab Organization
  How to Use/Modify
@@ -67,6 +68,9 @@ Free and Jump MovementState Scripts - two basic example (but probably useful) mo
 PlayerCam (and corresponding script) - easy way to manage the five cameras
 FirstPersonPlayerCam (and corresponding script) - a first person camera with lerp based tilt and fov changing
 ThirdPersonPlayerCam (and corresponding script) - easy way to manage the 4 third person camera. Uses cinemachine. Easy to create new cameras
+
+--- REPO ORGANIZATION ---
+This repo contains four different versions of the player controller, each with its own corresponding project (they're small files, don't worry). The player controllers are made for either the Built In Render Pipeline or the Universal Render Pipeline, and either with or without the extra six movement states. The folders, packages, and projects are labelled accordingly. The URP and Builtin folders also both contain a testing terrain package for that render pipeline. Note: If you make modifications in one pipeline and realize you want to use the other pipeline, it's fairly simple to switch it over guided by the compiler errors.
 
 --- ASSETS ORGANIZATION ---
 > Player
