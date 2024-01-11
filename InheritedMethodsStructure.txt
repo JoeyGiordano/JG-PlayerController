@@ -1,0 +1,34 @@
+
+
+
+Startup()	called on Unity's Start() method ( or when you call PlayerMovementStateMachine.Startup() )
+GetMyState()	called after Startup(), the returned value is set to the variable state in the parent
+UseAWSD()	called after Startup(), whether or not to use AWSD movement (AWSD can also be turned on and off using MoveRes)
+Reset()		called when PlayerMovementStateMachine.Reset() is called
+
+
+Unity's Update()	
+Call ChildUpdate()
+     \/
+Call EnterCondition(), if true
+                          \/
+			get the current active state (activeState)
+			set activeState to not active
+			set call activeState.OnOverride()
+			set state to active
+                        call OnEnter()
+     \/
+Call ExitCondition(), if true
+                          \/
+                          set the state to not active
+                          call OnExit(), giving the output nextState
+                          set nextState to active
+                          call nextState.OnEnter()
+
+Unity's FixedUpdate()
+     \/
+if active, call WhileActive()
+
+*just psuedocode, some things actually happen in a slightly different order, see MovementStateMachine and MovementState
+
+
