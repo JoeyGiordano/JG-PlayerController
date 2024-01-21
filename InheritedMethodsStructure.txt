@@ -1,6 +1,8 @@
 
 
 
+
+
 Startup()	called on Unity's Start() method ( or when you call PlayerMovementStateMachine.Startup() )
 GetMyState()	called after Startup(), the returned value is set to the variable state in the parent
 UseAWSD()	called after Startup(), whether or not to use AWSD movement (AWSD can also be turned on and off using MoveRes)

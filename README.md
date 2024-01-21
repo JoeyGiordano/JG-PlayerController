@@ -25,6 +25,9 @@ Unity 2022.3, 3d URP or 3d BuiltIn Render Pipeline
 Cinemachine
 
 --- SETUP ---
+Follow these steps or watch tutorial at
+https://www.youtube.com/watch?v=KdOKnr91kS0&t=8s&ab_channel=JoeyGiordano
+to import and setup the package.
 1. Open a new or existing Unity 3D URP Project
 2. Install Cinemachine
     a. Window > Package Manager
@@ -109,7 +112,8 @@ Note: if the description says folder, the gameobjects doesn't have scripts, it's
 
 --- HOW TO USE/MODIFY ---
 Add movement states:
-Instructions in the PlayerMovementStateMachine script.
+Instructions in the PlayerMovementStateMachine script or watch tutorial at
+https://www.youtube.com/watch?v=xVkFvf60qOo&t=451s&ab_channel=JoeyGiordano
 
 Add cameras:
 Instructions in the PlayerCam and ThirdPersonPlayerCam scripts.
